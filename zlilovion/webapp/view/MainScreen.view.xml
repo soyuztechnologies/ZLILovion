@@ -1,0 +1,13 @@
+<mvc:View xmlns:f="sap.f" controllerName="myswd.swd.zlilovion.controller.MainScreen"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page title="ZLILovion Test Program" titleAlignment="Center"  >
+        <RadioButtonGroup class="sapUiTinyMargin" >
+            <buttons>
+                <RadioButton text="Revision" ></RadioButton>
+                <RadioButton text="Revision" ></RadioButton>
+                <RadioButton text="Revision" ></RadioButton>
+            </buttons>
+        </RadioButtonGroup>
+    </Page>
+</mvc:View>

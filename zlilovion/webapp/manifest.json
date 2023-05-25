@@ -1,0 +1,104 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "myswd.swd.zlilovion",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.9.6",
+      "toolsId": "d169ba35-b217-49ff-8fb8-0bbc24ff078b"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "myswd.swd.zlilovion.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "myswd.swd.zlilovion.view",
+        "controlAggregation": "pages",
+        "controlId": "app-flex-layout"
+      },
+      "routes": [
+        {
+          "name": "MainScreen",
+          "pattern": "",
+          "target": [
+            "MainScreen"
+          ]
+        }
+      ],
+      "targets": {
+        "MainScreen": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "idMainScreen",
+          "viewName": "MainScreen"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "myswd.swd.zlilovion.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}
