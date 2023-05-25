@@ -1,7 +1,130 @@
 <mvc:View xmlns:f="sap.f" controllerName="myswd.swd.zlilovion.controller.InstaDetailScreen"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
     xmlns="sap.m">
-    <Page>
-        
+    <Page title="Header data">
+         <form:SimpleForm id="id-Credits"
+                            editable="true"
+                            layout="ColumnLayout"
+                            labelSpanXL="6"
+                            labelSpanL="4"
+                            labelSpanM="8"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="0"
+                            emptySpanL="0"
+                            emptySpanM="0"
+                            emptySpanS="0"
+                            columnsM="1"
+                            columnsL="3"
+                            columnsXL="4"
+                            singleContainerFullSize="false">
+              <core:Title text=" "></core:Title>
+              <Label text= "Temp. Auftragsnummer"></Label>
+              <Input ></Input>
+              <Label text= "Status"></Label>
+              <Input ></Input>
+              <Text text="Inserted"></Text>
+              <!-- <core:Title text=" "></core:Title> -->
+              <Label text=" "></Label>
+              <Label text= "Order Type"></Label>
+              <Input ></Input>
+              <Label text= "Plant"></Label>
+              <Input ></Input>
+              <!-- <core:Title text=" "></core:Title> -->
+              <Label text= "Aktivittsnummer"></Label>
+              <Input ></Input>
+              <Label text= "Main WorkCtr"></Label>
+              <Input ></Input>
+              <core:Title text=" "></core:Title>
+              <Label text= "Start Date"></Label>
+              <Input ></Input>
+              <!-- <core:Title text=" "></core:Title> -->
+              <Label text= "End Date"></Label>
+              <Input ></Input>
+              <Label text= "TBM NR"></Label>
+              <Input  ></Input>
+              <Label text= "Netzebene"></Label>
+              <Input ></Input>
+              <Label text= "Existiert PSP?"></Label>
+              
+              <Input ></Input>
+              <Label text= "Functional loc."></Label>
+              <Input ></Input>
+              <Label text= "WBS Element"></Label>
+              <Input ></Input>
+              <Label text= "MainActivType"></Label>
+              <Input ></Input>
+              <core:Title text=" "></core:Title>
+              <Label text= "Created On"></Label>
+              
+              <Input ></Input>
+              <Label text= "Time"></Label>
+              <Input ></Input>
+              <Label text= "Created By"></Label>
+              <Input ></Input>
+              <!-- <Label text= "MainActivType"></Label>
+              <Input ></Input> -->
+         </form:SimpleForm>
+
+         <Table
+            id="id-kunden-detail-Table"
+            width="auto"
+            mode="SingleSelectMaster"
+            showSeparators="Inner"
+            autoPopinMode="true"
+            alternateRowColors="true"
+            itemPress="onKundClickRow"
+        >
+         <headerToolbar >
+                <Toolbar>
+                <Text text="Item data"></Text>
+                <ToolbarSpacer ></ToolbarSpacer>
+                    <Button text="Draft save" press="onKundnnextScreen" type="Emphasized"/>
+                    <Button text="Create order" press="onKundnnextScreen" type="Emphasized"/>
+                </Toolbar>
+            </headerToolbar>
+            <columns>
+                <Column>
+                    <Label text="Position" />
+                </Column>
+                <Column>
+                    <Label text="Fremdsch." />
+                </Column>
+                <Column>
+                    <Label text="Material" />
+                </Column>
+                <Column>
+                    <Label text="Plnt" />
+                </Column>
+                <Column>
+                    <Label text="Quantity" />
+                </Column>
+                <Column>
+                    <Label text="Unit" />
+                </Column>
+                <Column>
+                    <Label text="Net Value" />
+                </Column>
+                <Column>
+                    <Label text="Crcy" />
+                </Column>
+                
+            </columns>
+            <ColumnListItem>
+                <cells>
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+
+                    <Text text="" />
+                    <Text text="" />
+
+                    <Text text="" />
+                    
+                </cells>
+            </ColumnListItem>
+        </Table>
     </Page>
 </mvc:View>
