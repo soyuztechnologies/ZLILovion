@@ -82,6 +82,42 @@
           "target": [
             "MainScreen"
           ]
+        },
+        {
+          "name": "Kundenauftrag",
+          "pattern": "Kundenauftrag",
+          "target": [
+            "Kundenauftrag"
+          ]
+        },
+        {
+          "name": "Revision",
+          "pattern": "Revision",
+          "target": [
+            "Revision"
+          ]
+        },
+        {
+          "name": "KundenDetailScreen",
+          "pattern": "KundenDetailScreen",
+          "target": [
+            "KundenDetailScreen"
+          ]
+        },
+        {
+          "name": "InstaDetailScreen",
+          "pattern": "InstaDetailScreen",
+          "target": [
+            "InstaDetailScreen"
+          ]
+        },
+
+        {
+          "name": "Instandhaltungsauftrag",
+          "pattern": "Instandhaltungsauftrag",
+          "target": [
+            "Instandhaltungsauftrag"
+          ]
         }
       ],
       "targets": {
@@ -89,8 +125,49 @@
           "viewType": "XML",
           "transition": "slide",
           "controlAggregation": "beginColumnPages",
+          "clearControlAggregation": true,
           "viewId": "idMainScreen",
           "viewName": "MainScreen"
+        },
+        "Instandhaltungsauftrag": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "clearControlAggregation": true,
+          "viewId": "idInstandhaltungsauftrag",
+          "viewName": "Instandhaltungsauftrag"
+        },
+        "Revision": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "clearControlAggregation": true,
+          "viewId": "idRevision",
+          "viewName": "Revision"
+        },
+        "Kundenauftrag": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "clearControlAggregation": true,
+          "viewId": "idKundenauftrag",
+          "viewName": "Kundenauftrag"
+        },
+        "KundenDetailScreen": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "clearControlAggregation": true,
+          "viewId": "idKundenDetailScreen",
+          "viewName": "KundenDetailScreen"
+        },
+        "InstaDetailScreen": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "clearControlAggregation": true,
+          "viewId": "idInstaDetailScreen",
+          "viewName": "InstaDetailScreen"
         }
       }
     },

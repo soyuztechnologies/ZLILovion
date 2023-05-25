@@ -1,0 +1,85 @@
+<mvc:View
+    xmlns:f="sap.f"
+    controllerName="myswd.swd.zlilovion.controller.Revision"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        title="Revision"
+        titleAlignment="Center"
+        navButtonPress="onNavButtonPress"
+        showNavButton="true"
+    >
+        <Table
+            id="idTable"
+            width="auto"
+            mode="SingleSelectMaster"
+            showSeparators="Inner"
+            autoPopinMode="true"
+            alternateRowColors="true"
+            itemPress="onClickRow"
+        >
+            <headerToolbar>
+                <Toolbar>
+                    <Button text="Create" type="Emphasized"/>
+                </Toolbar>
+            </headerToolbar>
+            <columns>
+                <Column>
+                    <Label text="PiWk" />
+                </Column>
+                <Column>
+                    <Label text="Revision" />
+                </Column>
+                <Column>
+                    <Label text="Status" />
+                </Column>
+                <Column>
+                    <Label text="RevisArt" />
+                </Column>
+                <Column>
+                    <Label text="Bezeichnung der Revision" />
+                </Column>
+                <Column>
+                    <Label text="Maẞnahmenu" />
+                </Column>
+                <Column>
+                    <Label text="RevBeginnDat" />
+                </Column>
+                <Column>
+                    <Label text="RevEndeDat" />
+                </Column>
+                <Column>
+                    <Label text="E-Mail-Adresse" />
+                </Column>
+                <Column>
+                    <Label text="Angelegt am" />
+                </Column>
+                <Column>
+                    <Label text="Uhrzeit" />
+                </Column>
+                <Column>
+                    <Label text="Angel.von" />
+                </Column>
+            </columns>
+            <ColumnListItem>
+                <cells>
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                </cells>
+            </ColumnListItem>
+        </Table>
+    </Page>
+</mvc:View>

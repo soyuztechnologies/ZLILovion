@@ -1,0 +1,111 @@
+<mvc:View xmlns:f="sap.f" controllerName="myswd.swd.zlilovion.controller.Instandhaltungsauftrag"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page title="Instandhaltungsauftrag" titleAlignment="Center" navButtonPress="onNavButtonPress" showNavButton="true" >
+       <Table
+            id="id-Insta-Table"
+            width="auto"
+            mode="SingleSelectMaster"
+            showSeparators="Inner"
+            autoPopinMode="true"
+            alternateRowColors="true"
+            itemPress="onKundClickRow"
+        >
+         <headerToolbar>
+                <Toolbar>
+                    <Button text="next Screen" press="onInstaNextScreen" type="Emphasized"/>
+                </Toolbar>
+            </headerToolbar>
+            <columns>
+                <Column>
+                    <Label text="Temp. Auft" />
+                </Column>
+                <Column>
+                    <Label text="Status" />
+                </Column>
+                <Column>
+                    <Label text="Auftragsar" />
+                </Column>
+                <Column>
+                    <Label text="VArt" />
+                </Column>
+                <Column>
+                    <Label text="TBM NR" />
+                </Column>
+                <Column>
+                    <Label text="Aktivitat" />
+                </Column>
+                <Column>
+                    <Label text="Netzebene" />
+                </Column>
+                <Column>
+                    <Label text="Gültig ab" />
+                </Column>
+                <Column>
+                    <Label text="Gültig bis" />
+                </Column>
+                <Column>
+                    <Label text="Veran." />
+                </Column>
+                <Column>
+                    <Label text="PSP?" />
+                </Column>
+                <Column>
+                    <Label text="Werk" />
+                </Column>
+                <Column>
+                    <Label text="VerArbPI" />
+                </Column>
+
+                <Column>
+                    <Label text="TechnPlatz" />
+                </Column>
+                <Column>
+                    <Label text="PSP-Elm" />
+                </Column>
+                <Column>
+                    <Label text="ILA" />
+                </Column>
+                <Column>
+                    <Label text="Angelegt am" />
+                </Column>
+                <Column>
+                    <Label text="Uhrzeit" />
+                </Column>
+                <Column>
+                    <Label text="Angel.von" />
+                </Column>
+                <Column>
+                    <Label text="Cre.Ord.Nr" />
+                </Column>
+            </columns>
+            <ColumnListItem>
+                <cells>
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+
+                    <Text text="" />
+                    <Text text="" />
+                </cells>
+            </ColumnListItem>
+        </Table>  
+    </Page>
+</mvc:View>

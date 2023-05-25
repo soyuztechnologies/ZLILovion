@@ -15,6 +15,9 @@ sap.ui.define([
             let oResourceBundle = oResourceModel.getResourceBundle();
             return oResourceBundle;
         },
+        onNavButtonPress: function(){
+            window.history.go(-1);
+        }
         
     });
 
