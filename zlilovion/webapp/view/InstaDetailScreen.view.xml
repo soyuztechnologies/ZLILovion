@@ -31,7 +31,7 @@
               <Label text= "Plant"></Label>
               <Input ></Input>
               <!-- <core:Title text=" "></core:Title> -->
-              <Label text= "Aktivittsnummer"></Label>
+              <Label text= "Aktivitätsnummer"></Label>
               <Input ></Input>
               <Label text= "Main WorkCtr"></Label>
               <Input ></Input>
