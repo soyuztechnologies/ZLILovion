@@ -27,17 +27,20 @@ sap.ui.define([
                 debugger;
                 // let oSource = oEvent.getSource();
                 let oRadioButton = oEvent.getSource().getParent().getContent()[0];
-                let oSelectedButton = oRadioButton.getSelectedButton().getProperty("text");
-                if(oSelectedButton === 'Instandhaltungsauftrag'){
-                    this.oRouter.navTo("Instandhaltungsauftrag");
+                let oSelectedButton = oRadioButton.getSelectedButton();
+                let oSelBtnCustomData = oSelectedButton.getCustomData()[0];
+                let sRoutePath = oSelBtnCustomData.getKey();
+                this.oRouter.navTo(sRoutePath);
+                // if(oSelectedButton === 'PMOrder'){
+                //     this.oRouter.navTo("PMOrder");
 
-                }else if(oSelectedButton === 'Kundenauftrag'){
-                    this.oRouter.navTo("Kundenauftrag");
+                // }else if(oSelectedButton === 'Kundenauftrag'){
+                //     this.oRouter.navTo("Kundenauftrag");
                     
-                }else if(oSelectedButton === 'Revision'){
-                    this.oRouter.navTo("Revision");
+                // }else if(oSelectedButton === 'Revision'){
+                //     this.oRouter.navTo("Revision");
 
-                }
+                // }
                 this.mainDailog.close();
 
             }

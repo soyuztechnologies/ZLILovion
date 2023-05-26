@@ -13,9 +13,21 @@
             selectedIndex="-1"
         >
             <buttons>
-                <RadioButton text="Revision" />
-                <RadioButton text="Kundenauftrag" />
-                <RadioButton text="Instandhaltungsauftrag" />
+                <RadioButton text="Revision">
+                    <customData>
+                        <core:CustomData key="Revision" />
+                    </customData>
+                </RadioButton>
+                <RadioButton text="Kundenauftrag" >
+                    <customData>
+                        <core:CustomData key="SalesOrder" />
+                    </customData>
+                </RadioButton>
+                <RadioButton text="Instandhaltungsauftrag" >
+                    <customData>
+                        <core:CustomData key="PMOrder" />
+                    </customData>
+                </RadioButton>
             </buttons>
         </RadioButtonGroup>
         <!-- <Toolbar >

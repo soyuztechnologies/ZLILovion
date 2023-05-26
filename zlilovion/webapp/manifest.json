@@ -57,6 +57,13 @@
         "settings": {
           "bundleName": "myswd.swd.zlilovion.i18n.i18n"
         }
+      },
+      "UIProps": {
+        "type": "JSONModel",
+        "preload": true,
+        "settings": {
+
+        }
       }
     },
     "resources": {
@@ -84,10 +91,10 @@
           ]
         },
         {
-          "name": "Kundenauftrag",
-          "pattern": "Kundenauftrag",
+          "name": "SalesOrder",
+          "pattern": "SalesOrder",
           "target": [
-            "Kundenauftrag"
+            "SalesOrder"
           ]
         },
         {
@@ -98,25 +105,25 @@
           ]
         },
         {
-          "name": "KundenDetailScreen",
-          "pattern": "KundenDetailScreen",
+          "name": "SalesOrderDetail",
+          "pattern": "SalesOrderDetail",
           "target": [
-            "KundenDetailScreen"
+            "SalesOrderDetail"
           ]
         },
         {
-          "name": "InstaDetailScreen",
-          "pattern": "InstaDetailScreen",
+          "name": "PMOrderDetail",
+          "pattern": "PMOrderDetail",
           "target": [
-            "InstaDetailScreen"
+            "PMOrderDetail"
           ]
         },
 
         {
-          "name": "Instandhaltungsauftrag",
-          "pattern": "Instandhaltungsauftrag",
+          "name": "PMOrder",
+          "pattern": "PMOrder",
           "target": [
-            "Instandhaltungsauftrag"
+            "PMOrder"
           ]
         }
       ],
@@ -129,13 +136,13 @@
           "viewId": "idMainScreen",
           "viewName": "MainScreen"
         },
-        "Instandhaltungsauftrag": {
+        "PMOrder": {
           "viewType": "XML",
           "transition": "slide",
           "controlAggregation": "beginColumnPages",
           "clearControlAggregation": true,
-          "viewId": "idInstandhaltungsauftrag",
-          "viewName": "Instandhaltungsauftrag"
+          "viewId": "idPMOrder",
+          "viewName": "PMOrder"
         },
         "Revision": {
           "viewType": "XML",
@@ -145,29 +152,29 @@
           "viewId": "idRevision",
           "viewName": "Revision"
         },
-        "Kundenauftrag": {
+        "SalesOrder": {
           "viewType": "XML",
           "transition": "slide",
           "controlAggregation": "beginColumnPages",
           "clearControlAggregation": true,
-          "viewId": "idKundenauftrag",
-          "viewName": "Kundenauftrag"
+          "viewId": "idSalesOrder",
+          "viewName": "SalesOrder"
         },
-        "KundenDetailScreen": {
+        "SalesOrderDetail": {
           "viewType": "XML",
           "transition": "slide",
           "controlAggregation": "beginColumnPages",
           "clearControlAggregation": true,
-          "viewId": "idKundenDetailScreen",
-          "viewName": "KundenDetailScreen"
+          "viewId": "idSalesOrderDetail",
+          "viewName": "SalesOrderDetail"
         },
-        "InstaDetailScreen": {
+        "PMOrderDetail": {
           "viewType": "XML",
           "transition": "slide",
           "controlAggregation": "beginColumnPages",
           "clearControlAggregation": true,
-          "viewId": "idInstaDetailScreen",
-          "viewName": "InstaDetailScreen"
+          "viewId": "idPMOrderDetail",
+          "viewName": "PMOrderDetail"
         }
       }
     },

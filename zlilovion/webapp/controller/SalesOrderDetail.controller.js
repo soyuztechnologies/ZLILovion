@@ -4,18 +4,18 @@ sap.ui.define([
     function (BaseController) {
         "use strict";
 
-        return BaseController.extend("myswd.swd.zlilovion.controller.InstaDetailScreen", {
+        return BaseController.extend("myswd.swd.zlilovion.controller.SalesOrderDetail", {
             onInit: function () {
                 let oOwnerComponent = this.getOwnerComponent();
                 this.oRouter = oOwnerComponent.getRouter();
-                this.oRouter.getRoute("InstaDetailScreen").attachPatternMatched(this._fnInstaDetailScreenRmh, this);
+                this.oRouter.getRoute("SalesOrderDetail").attachPatternMatched(this._fnSalesOrderDetailRmh, this);
             
             },
-            _fnInstaDetailScreenRmh: function(){
+            _fnSalesOrderDetailRmh: function(){
 
             },
             onNavButtonPress:function(){
-                this.oRouter.navTo('Instandhaltungsauftrag');
+                this.oRouter.navTo('SalesOrder');
             }
         });
     });

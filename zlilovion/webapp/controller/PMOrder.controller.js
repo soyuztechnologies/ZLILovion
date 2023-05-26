@@ -4,18 +4,18 @@ sap.ui.define([
     function (BaseController) {
         "use strict";
 
-        return BaseController.extend("myswd.swd.zlilovion.controller.Instandhaltungsauftrag", {
+        return BaseController.extend("myswd.swd.zlilovion.controller.PMOrder", {
             onInit: function () {
                 let oOwnerComponent = this.getOwnerComponent();
                 this.oRouter = oOwnerComponent.getRouter();
-                this.oRouter.getRoute("Instandhaltungsauftrag").attachPatternMatched(this._fnInstandhaltungsauftragRmh, this);
+                this.oRouter.getRoute("PMOrder").attachPatternMatched(this._fnPMOrderRmh, this);
             
             },
-            _fnInstandhaltungsauftragRmh: function(){
-
+            _fnPMOrderRmh: function(){
+                this.getModel("UIprops").setProperty("/PMOrderData", []);
             },
             onInstaNextScreen: function(oEvent){
-                this.oRouter.navTo("InstaDetailScreen")
+                this.oRouter.navTo("PMOrderDetail")
             },
 
             onNavButtonPress:function(){

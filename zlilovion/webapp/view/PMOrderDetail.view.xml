@@ -1,13 +1,12 @@
 <mvc:View
-    xmlns:cards="sap.f.cards"
-    xmlns:form="sap.ui.layout.form"
     xmlns:f="sap.f"
-    controllerName="myswd.swd.zlilovion.controller.KundenDetailScreen"
+    controllerName="myswd.swd.zlilovion.controller.PMOrderDetail"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:c="sap.ui.core"
     displayBlock="true"
+    xmlns:form="sap.ui.layout.form"
     xmlns:core="sap.ui.core"
     xmlns="sap.m"
+    xmlns:c="sap.ui.core"
 >
     <Page
         title="Header data"
@@ -43,9 +42,42 @@
                 design="Bold"
             />
             <Input />
-            <Text text="Will be inserted" />
-
+            <Text text="Inserted" />
+            <!-- <core:Title text=" "></core:Title> -->
+            <Label text=" " />
+            <Label
+                text="Order Type"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Plant"
+                design="Bold"
+            />
+            <Input />
+            <!-- <core:Title text=" "></core:Title> -->
+            <Label
+                text="Aktivitätsnummer"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Main WorkCtr"
+                design="Bold"
+            />
+            <Input />
             <core:Title text=" " />
+            <Label
+                text="Start Date"
+                design="Bold"
+            />
+            <Input />
+            <!-- <core:Title text=" "></core:Title> -->
+            <Label
+                text="End Date"
+                design="Bold"
+            />
+            <Input />
             <Label
                 text="TBM NR"
                 design="Bold"
@@ -56,52 +88,46 @@
                 design="Bold"
             />
             <Input />
+            <Label
+                text="Existiert PSP?"
+                design="Bold"
+            />
 
+            <Input />
+            <Label
+                text="Functional loc."
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="WBS Element"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="MainActivType"
+                design="Bold"
+            />
+            <Input />
             <core:Title text=" " />
             <Label
-                text="Angelegt am"
-                design="Bold"
-            />
-            <Input />
-            <Label
-                text="Uhrzeit"
-                design="Bold"
-            />
-            <Input />
-            <Label
-                text="Angelegt von"
-                design="Bold"
-            />
-            <Input />
-
-            <core:Title text=" " />
-            <Label
-                text="VerkBelegart"
-                design="Bold"
-            />
-            <Input />
-            <Label
-                text="Verkaufsorg"
-                design="Bold"
-            />
-            <Input />
-            <Label
-                text="Vertriebsweg"
-                design="Bold"
-            />
-            <Input />
-            <Label
-                text="Sparte"
+                text="Created On"
                 design="Bold"
             />
 
             <Input />
-            <Text text="Wasser" />
             <Label
-                text="Debitor"
+                text="Time"
                 design="Bold"
             />
             <Input />
+            <Label
+                text="Created By"
+                design="Bold"
+            />
+            <Input />
+            <!-- <Label text= "MainActivType"></Label>
+              <Input ></Input> -->
         </form:SimpleForm>
 
         <Table
@@ -116,6 +142,7 @@
             <headerToolbar>
                 <Toolbar>
                     <Text text="Item data" />
+                    <ToolbarSpacer />
                 </Toolbar>
             </headerToolbar>
             <columns>
@@ -157,7 +184,7 @@
                             writeToDom="true"
                         />
                     </customData>
-                    <Label text="Work Menge" />
+                    <Label text="Plnt" />
                 </Column>
                 <Column>
                     <customData>
@@ -167,7 +194,7 @@
                             writeToDom="true"
                         />
                     </customData>
-                    <Label text="BME" />
+                    <Label text="Quantity" />
                 </Column>
                 <Column>
                     <customData>
@@ -177,7 +204,27 @@
                             writeToDom="true"
                         />
                     </customData>
-                    <Label text="Nettowert" />
+                    <Label text="Unit" />
+                </Column>
+                <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
+                    <Label text="Net Value" />
+                </Column>
+                <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
+                    <Label text="Crcy" />
                 </Column>
             </columns>
             <ColumnListItem>
@@ -185,6 +232,9 @@
                     <Text text="" />
                     <Text text="" />
                     <Text text="" />
+                    <Text text="" />
+                    <Text text="" />
+
                     <Text text="" />
                     <Text text="" />
 
