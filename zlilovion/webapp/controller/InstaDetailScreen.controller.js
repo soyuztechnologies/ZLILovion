@@ -13,6 +13,9 @@ sap.ui.define([
             },
             _fnInstaDetailScreenRmh: function(){
 
+            },
+            onNavButtonPress:function(){
+                this.oRouter.navTo('Instandhaltungsauftrag');
             }
         });
     });

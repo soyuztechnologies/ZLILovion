@@ -17,6 +17,9 @@ sap.ui.define([
             },
             onKundnnextScreen: function(oEvent){
                 this.oRouter.navTo("KundenDetailScreen")
+            },
+            onNavButtonPress:function(){
+                this.oRouter.navTo("MainScreen");
             }
         });
     });

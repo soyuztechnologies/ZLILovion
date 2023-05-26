@@ -3,6 +3,7 @@
     controllerName="myswd.swd.zlilovion.controller.Revision"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
+    xmlns:c="sap.ui.core"
     xmlns="sap.m"
 >
     <Page
@@ -20,46 +21,130 @@
             alternateRowColors="true"
             itemPress="onClickRow"
         >
-            <headerToolbar>
+            <!-- <headerToolbar>
                 <Toolbar>
                     <Button text="Create" type="Emphasized"/>
                 </Toolbar>
-            </headerToolbar>
+            </headerToolbar> -->
             <columns>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="PiWk" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Revision" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Status" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="RevisArt" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Bezeichnung der Revision" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Maẞnahmenu" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="RevBeginnDat" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="RevEndeDat" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="E-Mail-Adresse" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Angelegt am" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Uhrzeit" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Angel.von" />
                 </Column>
             </columns>
@@ -70,7 +155,6 @@
                     <Text text="" />
                     <Text text="" />
                     <Text text="" />
-
                     <Text text="" />
                     <Text text="" />
                     <Text text="" />
@@ -81,5 +165,16 @@
                 </cells>
             </ColumnListItem>
         </Table>
+
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button
+                    icon="sap-icon://create"
+                    text="Erstellen"
+                    type="Emphasized"
+                />
+            </OverflowToolbar>
+        </footer>
     </Page>
 </mvc:View>

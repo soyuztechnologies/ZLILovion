@@ -1,8 +1,18 @@
-<mvc:View xmlns:f="sap.f" controllerName="myswd.swd.zlilovion.controller.Instandhaltungsauftrag"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page title="Instandhaltungsauftrag" titleAlignment="Center" navButtonPress="onNavButtonPress" showNavButton="true" >
-       <Table
+<mvc:View
+    xmlns:f="sap.f"
+    controllerName="myswd.swd.zlilovion.controller.Instandhaltungsauftrag"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:c="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Page
+        title="Instandhaltungsauftrag"
+        titleAlignment="Center"
+        navButtonPress="onNavButtonPress"
+        showNavButton="true"
+    >
+        <Table
             id="id-Insta-Table"
             width="auto"
             mode="SingleSelectMaster"
@@ -11,71 +21,215 @@
             alternateRowColors="true"
             itemPress="onKundClickRow"
         >
-         <headerToolbar>
+            <headerToolbar>
                 <Toolbar>
-                    <Button text="next Screen" press="onInstaNextScreen" type="Emphasized"/>
+                    <Button
+                        text="next Screen"
+                        press="onInstaNextScreen"
+                        type="Emphasized"
+                    />
                 </Toolbar>
             </headerToolbar>
             <columns>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Temp. Auft" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Status" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Auftragsar" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="VArt" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="TBM NR" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Aktivitat" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Netzebene" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Gültig ab" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Gültig bis" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Veran." />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="PSP?" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Werk" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="VerArbPI" />
                 </Column>
 
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="TechnPlatz" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="PSP-Elm" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="ILA" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Angelegt am" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Uhrzeit" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Angel.von" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Cre.Ord.Nr" />
                 </Column>
             </columns>
@@ -106,6 +260,6 @@
                     <Text text="" />
                 </cells>
             </ColumnListItem>
-        </Table>  
+        </Table>
     </Page>
 </mvc:View>

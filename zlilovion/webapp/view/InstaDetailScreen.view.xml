@@ -1,72 +1,136 @@
-<mvc:View xmlns:f="sap.f" controllerName="myswd.swd.zlilovion.controller.InstaDetailScreen"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
-    xmlns="sap.m">
-    <Page title="Header data">
-         <form:SimpleForm id="id-Credits"
-                            editable="true"
-                            layout="ColumnLayout"
-                            labelSpanXL="6"
-                            labelSpanL="4"
-                            labelSpanM="8"
-                            labelSpanS="12"
-                            adjustLabelSpan="false"
-                            emptySpanXL="0"
-                            emptySpanL="0"
-                            emptySpanM="0"
-                            emptySpanS="0"
-                            columnsM="1"
-                            columnsL="3"
-                            columnsXL="4"
-                            singleContainerFullSize="false">
-              <core:Title text=" "></core:Title>
-              <Label text= "Temp. Auftragsnummer"></Label>
-              <Input ></Input>
-              <Label text= "Status"></Label>
-              <Input ></Input>
-              <Text text="Inserted"></Text>
-              <!-- <core:Title text=" "></core:Title> -->
-              <Label text=" "></Label>
-              <Label text= "Order Type"></Label>
-              <Input ></Input>
-              <Label text= "Plant"></Label>
-              <Input ></Input>
-              <!-- <core:Title text=" "></core:Title> -->
-              <Label text= "Aktivitätsnummer"></Label>
-              <Input ></Input>
-              <Label text= "Main WorkCtr"></Label>
-              <Input ></Input>
-              <core:Title text=" "></core:Title>
-              <Label text= "Start Date"></Label>
-              <Input ></Input>
-              <!-- <core:Title text=" "></core:Title> -->
-              <Label text= "End Date"></Label>
-              <Input ></Input>
-              <Label text= "TBM NR"></Label>
-              <Input  ></Input>
-              <Label text= "Netzebene"></Label>
-              <Input ></Input>
-              <Label text= "Existiert PSP?"></Label>
-              
-              <Input ></Input>
-              <Label text= "Functional loc."></Label>
-              <Input ></Input>
-              <Label text= "WBS Element"></Label>
-              <Input ></Input>
-              <Label text= "MainActivType"></Label>
-              <Input ></Input>
-              <core:Title text=" "></core:Title>
-              <Label text= "Created On"></Label>
-              
-              <Input ></Input>
-              <Label text= "Time"></Label>
-              <Input ></Input>
-              <Label text= "Created By"></Label>
-              <Input ></Input>
-              <!-- <Label text= "MainActivType"></Label>
-              <Input ></Input> -->
-         </form:SimpleForm>
+<mvc:View
+    xmlns:f="sap.f"
+    controllerName="myswd.swd.zlilovion.controller.InstaDetailScreen"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+>
+    <Page
+        title="Header data"
+        navButtonPress="onNavButtonPress"
+        showNavButton="true"
+    >
+        <form:SimpleForm
+            id="id-Credits"
+            editable="true"
+            layout="ColumnLayout"
+            labelSpanXL="6"
+            labelSpanL="4"
+            labelSpanM="8"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="0"
+            emptySpanL="0"
+            emptySpanM="0"
+            emptySpanS="0"
+            columnsM="1"
+            columnsL="3"
+            columnsXL="4"
+            singleContainerFullSize="false"
+        >
+            <core:Title text=" " />
+            <Label
+                text="Temp. Auftragsnummer"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Status"
+                design="Bold"
+            />
+            <Input />
+            <Text text="Inserted" />
+            <!-- <core:Title text=" "></core:Title> -->
+            <Label text=" " />
+            <Label
+                text="Order Type"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Plant"
+                design="Bold"
+            />
+            <Input />
+            <!-- <core:Title text=" "></core:Title> -->
+            <Label
+                text="Aktivitätsnummer"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Main WorkCtr"
+                design="Bold"
+            />
+            <Input />
+            <core:Title text=" " />
+            <Label
+                text="Start Date"
+                design="Bold"
+            />
+            <Input />
+            <!-- <core:Title text=" "></core:Title> -->
+            <Label
+                text="End Date"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="TBM NR"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Netzebene"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Existiert PSP?"
+                design="Bold"
+            />
 
-         <Table
+            <Input />
+            <Label
+                text="Functional loc."
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="WBS Element"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="MainActivType"
+                design="Bold"
+            />
+            <Input />
+            <core:Title text=" " />
+            <Label
+                text="Created On"
+                design="Bold"
+            />
+
+            <Input />
+            <Label
+                text="Time"
+                design="Bold"
+            />
+            <Input />
+            <Label
+                text="Created By"
+                design="Bold"
+            />
+            <Input />
+            <!-- <Label text= "MainActivType"></Label>
+              <Input ></Input> -->
+        </form:SimpleForm>
+
+        <Table
             id="id-kunden-detail-Table"
             width="auto"
             mode="SingleSelectMaster"
@@ -75,40 +139,93 @@
             alternateRowColors="true"
             itemPress="onKundClickRow"
         >
-         <headerToolbar >
+            <headerToolbar>
                 <Toolbar>
-                <Text text="Item data"></Text>
-                <ToolbarSpacer ></ToolbarSpacer>
-                    <Button text="Draft save" press="onKundnnextScreen" type="Emphasized"/>
-                    <Button text="Create order" press="onKundnnextScreen" type="Emphasized"/>
+                    <Text text="Item data" />
+                    <ToolbarSpacer />
                 </Toolbar>
             </headerToolbar>
             <columns>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Position" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Fremdsch." />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Material" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Plnt" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Quantity" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Unit" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Net Value" />
                 </Column>
                 <Column>
+                    <customData>
+                        <c:CustomData
+                            key="tableHeaderColor"
+                            value="custom"
+                            writeToDom="true"
+                        />
+                    </customData>
                     <Label text="Crcy" />
                 </Column>
-                
             </columns>
             <ColumnListItem>
                 <cells>
@@ -122,9 +239,25 @@
                     <Text text="" />
 
                     <Text text="" />
-                    
                 </cells>
             </ColumnListItem>
         </Table>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button
+                    icon="sap-icon://save"
+                    text="Draft save"
+                    press="onKundnnextScreen"
+                    type="Accept"
+                />
+                <Button
+                    icon="sap-icon://create"
+                    text="Create order"
+                    press="onKundnnextScreen"
+                    type="Success"
+                />
+            </OverflowToolbar>
+        </footer>
     </Page>
 </mvc:View>

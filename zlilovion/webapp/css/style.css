@@ -1,1 +1,4 @@
 /* Enter your custom styles here */
+th[data-tableheadercolor="custom"]{
+    background:  lightSkyblue !important;
+  }

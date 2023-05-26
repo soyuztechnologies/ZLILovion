@@ -13,6 +13,9 @@ sap.ui.define([
             },
             _fnKundenDetailScreenRmh: function(){
 
+            },
+            onNavButtonPress:function(){
+                this.oRouter.navTo('Kundenauftrag');
             }
         });
     });

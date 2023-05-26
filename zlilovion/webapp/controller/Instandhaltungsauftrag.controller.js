@@ -16,6 +16,10 @@ sap.ui.define([
             },
             onInstaNextScreen: function(oEvent){
                 this.oRouter.navTo("InstaDetailScreen")
+            },
+
+            onNavButtonPress:function(){
+                this.oRouter.navTo('MainScreen');
             }
         });
     });
