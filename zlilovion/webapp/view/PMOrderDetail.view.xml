@@ -49,12 +49,12 @@
                 text="Order Type"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true" />
             <Label
                 text="Plant"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true" />
             <!-- <core:Title text=" "></core:Title> -->
             <Label
                 text="Aktivitätsnummer"
@@ -65,7 +65,7 @@
                 text="Main WorkCtr"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true" />
             <core:Title text=" " />
             <Label
                 text="Start Date"
@@ -98,7 +98,7 @@
                 text="Functional loc."
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true" />
             <Label
                 text="WBS Element"
                 design="Bold"

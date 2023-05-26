@@ -15,7 +15,7 @@
         <Table
             id="idTable"
             width="auto"
-            mode="SingleSelectMaster"
+            mode="MultiSelect"
             showSeparators="Inner"
             autoPopinMode="true"
             alternateRowColors="true"

@@ -79,29 +79,30 @@
                 text="VerkBelegart"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true" />
             <Label
                 text="Verkaufsorg"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true" />
             <Label
                 text="Vertriebsweg"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true"  />
             <Label
                 text="Sparte"
                 design="Bold"
             />
 
-            <Input />
+            <Input showValueHelp="true" />
             <Text text="Wasser" />
             <Label
                 text="Debitor"
                 design="Bold"
             />
-            <Input />
+            <Input showValueHelp="true"  />
+            
         </form:SimpleForm>
 
         <Table
